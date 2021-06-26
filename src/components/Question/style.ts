@@ -1,5 +1,7 @@
-.question {
-  background: #fefefe;
+import styled from 'styled-components'
+
+export const QuestionStyle = styled.div`
+  background: ${({ theme }) => theme.textLight};
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   padding: 24px;
@@ -7,22 +9,22 @@
   & + .question {
     margin-top: 8px;
   }
-  
+
   &.highlighted {
-    background: #F4F0FF;
-    border: 1px solid #835AFD;
-    
+    background: #f4f0ff;
+    border: 1px solid ${({ theme }) => theme.primary};
+
     footer .user-info span {
-      color: #29292E;
+      color: ${({ theme }) => theme.inverted};
     }
   }
-  
+
   &.answered {
-    background: #DBDCDD;
+    background: ${({ theme }) => theme.mediumGrey};
   }
 
   p {
-    color: #29292e;
+    color: ${({ theme }) => theme.inverted};
   }
 
   footer {
@@ -43,7 +45,7 @@
 
       span {
         margin-left: 8px;
-        color: #737380;
+        color: ${({ theme }) => theme.grey};
         font-size: 14px;
       }
     }
@@ -62,14 +64,14 @@
       &.like-button {
         display: flex;
         align-items: flex-end;
-        color: #737380;
+        color: ${({ theme }) => theme.grey};
         gap: 8px;
 
         &.liked {
-          color: #835afd;
+          color: ${({ theme }) => theme.primary};
 
           svg path {
-            stroke: #835afd;
+            stroke: ${({ theme }) => theme.primary};
           }
         }
       }
@@ -79,4 +81,4 @@
       }
     }
   }
-}
+`
