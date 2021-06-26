@@ -42,6 +42,19 @@ Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
  - Utilizando theme provider
 
 
+<p align="center">
+<b>Sistema Rodando em Desktop</b>
+</p>
+
+<br>
+<h1 aligned="center">
+  <img alt="login" src="https://media.giphy.com/media/xUQc57CifXkBwdGr87/giphy.gif" width="100%" />
+</h1>
+<br>
+
+
+
+
 
 ## 📝 License
 
